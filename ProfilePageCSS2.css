@@ -1,0 +1,216 @@
+/* Global Styles */
+body {
+    font-family: Garamond, 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    background-color: #656E77;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    z-index: 3;
+    font-family: Garamond, 'Times New Roman', Times, serif, sans-serif;
+
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Content */
+main {
+    padding: 1em;
+    background-color: #CAD4DF;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #656E77;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 2;
+    opacity: 0.6; /* Changed to decimal for clarity */
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Fixed incorrect syntax */
+    gap: 2em;
+    padding: 2em;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Section Styles */
+.section-1, .section-2, .section-3, .section-4, .section-5, .section-6 {
+    background-color: #DDDBDE;
+    padding: 1em;
+    border-radius: 10px;
+    border: 3px solid #3B373B;
+    text-align: center;
+}
+
+.section-1, .section-2, .section-3 {
+    border-bottom-width: 5px;
+    border-left-width: 8px;
+}
+
+.section-4, .section-5, .section-6 {
+    border-bottom: 5px double #3B373B;
+    border-left: 8px double #3B373B;
+}
+
+.section-1 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-1 {
+    grid-column: span 2;
+    vertical-align: bottom; /* This won't work, likely meant vertical-align */
+}
+
+.section-2 {
+    grid-column: span 1;
+}
+
+.section-3 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.section-4 {
+    grid-column: span 1;
+}
+
+.section-5 {
+    grid-column: span 1;
+}
+
+.section-6 {
+    grid-column: span 1;
+}
+
+/* Form Styles */
+.container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0536aa94;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Writing Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    margin-bottom: 1em;
+}
+
+.bookshelf {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.book {
+    width: 60px;
+    height: 200px;
+    background-color: #656E77;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.book:hover {
+    background-color: #ff7b25;
+}
+
+.passage-display {
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
