@@ -32,6 +32,26 @@ header nav ul li a {
     text-decoration: none;
 }
 
+#writing-header {
+    background-color: #810000;
+}
+
+#contact-header {
+    background-color: #507B6A
+}
+
+#travel-header {
+     background-color: #EC6D67
+}
+
+#projects-header {
+    background-color: #1686CD;
+}
+
+#about-header {
+    background-color: #4D181C
+}
+
 /* Main Content */
 main {
     padding: 1em;
@@ -118,67 +138,9 @@ footer {
     grid-column: span 1;
 }
 
-/* Form Styles */
-.container {
-    width: 50%;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input, textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-textarea {
-    resize: vertical;
-}
-
-button {
-    margin-top: 20px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #0536aa94;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
 
 /* Writing Styles */
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 1em 0;
-    margin-bottom: 1em;
-}
 
 .bookshelf {
     display: flex;
@@ -213,4 +175,130 @@ header {
     max-width: 600px;
     margin: 0 auto;
     border-radius: 10px;
+}
+
+/* Travel Styles */
+
+.slider {
+    width: 100%;
+    height: 510px;
+    position: relative;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .slider img:first-child {
+    z-index: 1;
+  }
+  
+  .slider img:nth-child(2) {
+    z-index: 0;
+  }
+
+  .navigation-button {
+    text-align: center;
+    position: relative;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+
+
+  /* Contact Styles */
+.container {
+    font-family: Garamond;
+    text-align: center;
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #507B6A;
+    box-shadow: 0 0 20px rgba(6, 70, 16, 0.803);
+    opacity: 0.9;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #edf4f2;
+    border-radius: 10px;
+    font-family: Garamond;
+}
+
+textarea {
+    resize: vertical;
+    z-index: 2;
+    background-color: #edf4f2;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #31473A;
+    color: #edf4f2;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a77cde77;
+}
+
+
+.body-contact {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Garamond;
+    color: #edf4f2;
+    position: relative;
+    z-index: 1;
+}
+
+.body-contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://github.com/AJ-Omit/AJ-Omit.github.io/blob/main/Trees%20for%20contact.jpg?raw=true');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    z-index: -1; 
+    opacity: 0.8; 
 }
